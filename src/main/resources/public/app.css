@@ -1,0 +1,29 @@
+body {
+  /*font-family: 'Comfortaa', sans-serif;*/
+  text-align: center;
+  background: url(/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: white;
+}
+
+#name, #client {
+  color: black;
+}
+
+#submitSearch {
+  border-color: #770875;
+  background-color: #770875;
+  width: 150px;
+  height: 150px;
+  font-size: 32pt;
+  padding-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+#submitSearch:hover {
+  opacity: 0.7;
+}

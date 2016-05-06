@@ -1,4 +1,4 @@
-<h1>TERRORIFIC Salon</h1>
+<h1>Death By Glamour Salon</h1>
 
   #if ($stylists.size() != 0)
     <h2 class="heading">All Stylists</h2>
@@ -10,11 +10,10 @@
     <p>No Stylists added yet! Add one below!</p>
   #end
 
-  <h2>Add a Stylist</h2> <br/>
+  <h2>Add a Stylist</h2>
   <form action="/newstylist" method="post">
-    <label for="name">Stylist Name</label>
     <input id="name" name="name" type="text" required>
-
+    <br>
     <button type="submit" id="submitSearch" class="btn btn-success">
       <p><b class="glyphicon glyphicon glyphicon-plus"></b><b class="glyphicon glyphicon-user"></b></p>
     </button>
