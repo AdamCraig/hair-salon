@@ -122,7 +122,7 @@ COPY clients (id, name, stylist_id) FROM stdin;
 -- Name: clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('clients_id_seq', 1, false);
+SELECT pg_catalog.setval('clients_id_seq', 31, true);
 
 
 --
@@ -130,6 +130,17 @@ SELECT pg_catalog.setval('clients_id_seq', 1, false);
 --
 
 COPY stylists (id, name) FROM stdin;
+21	Papyrus
+22	Sans
+23	Toriel
+24	Flowey
+25	Frisk
+26	Undyne
+27	Asgore
+28	Napstablook
+29	Alphys
+30	Chara
+31	Mettaton (VIPs Only)
 \.
 
 
@@ -137,7 +148,7 @@ COPY stylists (id, name) FROM stdin;
 -- Name: stylists_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('stylists_id_seq', 1, false);
+SELECT pg_catalog.setval('stylists_id_seq', 31, true);
 
 
 --
