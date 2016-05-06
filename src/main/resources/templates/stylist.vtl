@@ -1,1 +1,22 @@
 <h1>$stylist.getName()</h1>
+
+#if ($stylist.getClients().size() != 0)
+  <h2>Clients:</h2>
+  #foreach ($client in $stylist.getClients())
+    <span class="client">$client.getName()</span>
+    <br>
+  #end
+#else
+  <p>This stylist has no clients yet!  Add one below!</p>
+#end
+
+<h2>Add a Client for $stylist.getName()</h2> <br/>
+<form action="/stylists/$stylist.getId()" method="post">
+  <input name="client" id="client" required>
+  <div>
+    <button type="submit" id="submitClient" class="btn btn-warning">Add Client</button>
+  </div>
+</form>
+
+<br>
+<a href="/" class="btn btn-info">Back To Homepage</a>
