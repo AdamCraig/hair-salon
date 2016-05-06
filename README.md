@@ -13,8 +13,11 @@ _An interactive Java web app that allows a user (the salon owner) to view a list
 _The project comes with two .sql files, hair_salon and hair_salon_test. Only hair_salon is needed for normal functionality with the pre-seeded stylists (and their unique backgrounds). Alternatively, one could set up the database tables in the command line as follows:
 
 In PSQL:
+
 CREATE DATABASE hair_salon;
+
 CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
+
 CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylist_id int);_
 
 ## Known Bugs
