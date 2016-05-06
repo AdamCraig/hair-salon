@@ -3,7 +3,7 @@
 #if ($stylist.getClients().size() != 0)
   <h2>Clients:</h2>
   #foreach ($client in $stylist.getClients())
-    <span class="client">$client.getName()</span>
+    <span class="client"><b class="glyphicon glyphicon-user"></b> $client.getName()</span>
     <br>
   #end
 #else
