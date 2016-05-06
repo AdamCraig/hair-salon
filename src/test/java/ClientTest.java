@@ -18,4 +18,16 @@ public class ClientTest {
     Client myClient = new Client("Jane");
     assertEquals("Jane", myClient.getName());
   }
+
+  @Test
+  public void all_emptyAtFirst() {
+    assertEquals(0, Client.all().size());
+  }
+
+  @Test
+  public void equals_returnsTrueIfNamesAreTheSame() {
+    Client firstClient = new Client("Bob");
+    Client secondClient = new Client("Bob");
+    assertTrue(firstClient.equals(secondClient));
+  }
 }
