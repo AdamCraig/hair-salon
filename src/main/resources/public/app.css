@@ -1,5 +1,5 @@
 body {
-  /*font-family: 'Comfortaa', sans-serif;*/
+  font-family: 'Permanent Marker', sans-serif;
   text-align: center;
   background: url(/home.jpg);
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@ body {
 
 #name, #client {
   color: black;
+  font-family: sans-serif;
 }
 
 #submitSearch {
@@ -19,11 +20,19 @@ body {
   height: 150px;
   font-size: 32pt;
   padding-top: 25px;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px;
   border-radius: 50%;
 }
 
 #submitSearch:hover {
   opacity: 0.7;
+}
+
+.stylistList {
+  font-size: 20pt;
+}
+
+.stylistList a {
+  color: #770875;
 }

@@ -1,9 +1,12 @@
 <h1>Death By Glamour Salon</h1>
 
+<h2>The Underground's new style paradise!</h2>
+
   #if ($stylists.size() != 0)
     <h2 class="heading">All Stylists</h2>
     #foreach($stylist in $stylists)
-      <a href="/stylists/$stylist.getId()">$stylist.getName()</a>
+      <br>
+      <span class="stylistList"><a href="/stylists/$stylist.getId()"><b class="glyphicon glyphicon glyphicon-scissors"></b> $stylist.getName()</a></span>
       <br>
     #end
   #else
