@@ -18,7 +18,7 @@ CREATE DATABASE hair_salon;
 
 CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
 
-CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylist_id int);_
+CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylist_id int);
 
 ## Known Bugs
 
