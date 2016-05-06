@@ -25,14 +25,124 @@ body {
   border-radius: 50%;
 }
 
-#submitSearch:hover {
+#submitClient {
+  border-color: #770875;
+  background-color: #770875;
+  width: 150px;
+  height: 150px;
+  font-size: 32pt;
+  margin-top: 25px;
+  border-radius: 50%;
+}
+
+#home {
+  width: 75px;
+  height: 75px;
+  font-size: 22pt;
+  padding-top: 15px;
+  padding-right: 13px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border-radius: 25%;
+}
+
+#submitSearch:hover, #submitClient:hover {
   opacity: 0.7;
 }
 
-.stylistList {
+.stylistList, .client {
   font-size: 20pt;
 }
 
 .stylistList a {
   color: #770875;
+}
+
+.papyrus {
+  background: url(/papyrus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.sans {
+  background: url(/sans.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.toriel {
+  background: url(/toriel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.flowey {
+  background: url(/flowey.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.frisk {
+  background: url(/frisk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.undyne {
+  background: url(/undyne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.asgore {
+  background: url(/asgore.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.napstablook {
+  background: url(/napstablook.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.alphys {
+  background: url(/alphys.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
+}
+
+
+.chara {
+  background: url(/chara.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: black;
 }

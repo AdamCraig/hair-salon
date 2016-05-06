@@ -1,3 +1,25 @@
+#if ($stylist.getName().equals("Papyrus"))
+  <body class="papyrus">
+#elseif ($stylist.getName().equals("Sans"))
+  <body class="sans">
+#elseif ($stylist.getName().equals("Toriel"))
+  <body class="toriel">
+#elseif ($stylist.getName().equals("Flowey"))
+  <body class="flowey">
+#elseif ($stylist.getName().equals("Frisk"))
+  <body class="frisk">
+#elseif ($stylist.getName().equals("Undyne"))
+  <body class="undyne">
+#elseif ($stylist.getName().equals("Asgore"))
+  <body class="asgore">
+#elseif ($stylist.getName().equals("Napstablook"))
+  <body class="napstablook">
+#elseif ($stylist.getName().equals("Alphys"))
+  <body class="alphys">
+#elseif ($stylist.getName().equals("Chara"))
+  <body class="chara">
+#end
+
 <h1>$stylist.getName()</h1>
 
 #if ($stylist.getClients().size() != 0)
@@ -7,15 +29,15 @@
     <br>
   #end
 #else
-  <p>This stylist has no clients yet!  Add one below!</p>
+  <h2>This stylist has no clients yet!  Add one below!</h2>
 #end
 
 <form action="/stylists/$stylist.getId()" method="post">
   <input name="client" id="client" required>
   <div>
-    <button type="submit" id="submitClient" class="btn btn-warning">Add Client</button>
+    <button type="submit" id="submitClient" class="btn btn-warning"><b class="glyphicon glyphicon glyphicon-plus"></b><b class="glyphicon glyphicon-user"></b></button>
   </div>
 </form>
 
 <br>
-<a href="/" class="btn btn-info">Back To Homepage</a>
+<a href="/" class="btn btn-success" id="home"><b class="glyphicon glyphicon-home"></b></a>
