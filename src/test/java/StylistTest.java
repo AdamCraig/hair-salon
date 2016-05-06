@@ -37,5 +37,20 @@ public class StylistTest {
     assertEquals(0, Stylist.all().size());
   }
 
+  @Test
+  public void equals_returnsTrueIfNamesAreTheSame() {
+    Stylist firstStylist = new Stylist("Jim");
+    Stylist secondStylist = new Stylist("Jim");
+    assertTrue(firstStylist.equals(secondStylist));
+  }
+
+  @Test
+  public void save_savesStylistIntoDatabase_true() {
+    Stylist myStylist = new Stylist("Chen");
+    myStylist.save();
+    assertTrue(Stylist.all().get(0).equals(myStylist));
+  }
+
+
 
 }
