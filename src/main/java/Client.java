@@ -10,7 +10,7 @@ public class Client {
     this.name = name;
   }
 
-  public Client(String name, int styist_id) {
+  public Client(String name, int stylist_id) {
     this.name = name;
     this.stylist_id = stylist_id;
   }
@@ -61,7 +61,8 @@ public class Client {
       return false;
     } else {
       Client myClient = (Client) otherClient;
-      return this.getName().equals(myClient.getName());
+      return this.getName().equals(myClient.getName()) &&
+             this.getStylistId() == (myClient.getStylistId());
     }
   }
 }
