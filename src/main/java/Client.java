@@ -19,10 +19,39 @@ public class Client {
     return name;
   }
 
+  public int getId() {
+    return id;
+  }
+
+  public int getStylistId() {
+    return stylist_id;
+  }
+
+  public void save() {
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "INSERT INTO clients(name, stylist_id) VALUES (:name, :stylist_id)";
+      this.id = (int) con.createQuery(sql, true)
+        .addParameter("name", this.name)
+        .addParameter("stylist_id", this.stylist_id)
+        .executeUpdate()
+        .getKey();
+    }
+  }
+
   public static List<Client> all() {
     String sql = "SELECT id, name FROM clients;";
     try(Connection con = DB.sql2o.open()) {
       return con.createQuery(sql).executeAndFetch(Client.class);
+    }
+  }
+
+  public static Client find(int id) {
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "SELECT * FROM clients WHERE id=:id;";
+      Client client = con.createQuery(sql)
+        .addParameter("id", id)
+        .executeAndFetchFirst(Client.class);
+      return client;
     }
   }
 
