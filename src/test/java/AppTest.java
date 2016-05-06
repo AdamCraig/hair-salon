@@ -49,6 +49,17 @@ public class AppTest extends FluentTest {
   }
 
   @Test
+  public void clientIsCreatedAndDisplayedTest() {
+    goTo("http://localhost:4567/");
+    fill("#name").with("Bob");
+    submit(".btn");
+    click("a", withText("Bob"));
+    fill("#client").with("Al");
+    assertThat(pageSource()).contains("Al");
+  }
+
+
+  @Test
   public void allClientsDisplayNameOnStylistPage() {
     Stylist myStylist = new Stylist("Jimbo");
     myStylist.save();
