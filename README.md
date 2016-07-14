@@ -1,3 +1,7 @@
+![Home Page](screenshot1.png)
+
+![Results](screenshot2.png)
+
 # _Death By Glamour Salon_
 
 #### _An interactive Java web app simulating a salon in the Underground that allows a user to view and add stylists/clients to the salon._
@@ -10,7 +14,7 @@ _An interactive Java web app that allows a user (the salon owner) to view a list
 
 ## Setup/Installation Requirements
 
-In the command line, clone the git repository to a directory (git clone https://github.com/AdamCraig/hair-salon). Navigate to the local repository's folder and use gradle to run the server (gradle run).
+In the command line, clone the git repository to a directory (git clone https://github.com/AdamCraig/hair-salon). Navigate to the local repository's folder and use gradle to run the server (gradle run). Then, in an internet browser, access "localhost:4567" (or your custom port)
 
 The project comes with two .sql files, hair_salon and hair_salon_test. Only hair_salon is needed for normal functionality with the pre-seeded stylists (and their unique backgrounds). Alternatively, one could set up the database tables in the command line as follows:
 
