@@ -2,6 +2,8 @@
 
 ![Results](screenshot2.png)
 
+![More Results](screenshot3.png)
+
 # _Death By Glamour Salon_
 
 #### _An interactive Java web app simulating a salon in the Underground that allows a user to view and add stylists/clients to the salon._
